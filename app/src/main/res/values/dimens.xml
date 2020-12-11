@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="etPaddingIcon">12dp</dimen>
-    <dimen name="defaultMargin">12dp</dimen>
+    <dimen name="margin_default">12dp</dimen>
+    <dimen name="width_logo">140dp</dimen>
+    <dimen name="height_logo">100dp</dimen>
 </resources>
