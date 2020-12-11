@@ -18,12 +18,11 @@
 
     <EditText
         android:id="@+id/etLoginUsername"
+        style="@style/Theme.PlatziMusic.EditTextStyle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/defaultMargin"
         android:drawableStart="@drawable/ic_person"
-        android:drawablePadding="@dimen/etPaddingIcon"
-        android:drawableTint="@color/colorAccent"
         android:hint="@string/hint_usuario"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,23 +30,22 @@
 
     <EditText
         android:id="@+id/etLoginPassword"
+        style="@style/Theme.PlatziMusic.EditTextStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/defaultMargin"
         android:drawableStart="@drawable/ic_lock"
-        android:drawablePadding="@dimen/etPaddingIcon"
-        android:drawableTint="@color/colorAccent"
         android:hint="@string/hint_password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/etLoginUsername" />
 
     <com.google.android.material.button.MaterialButton
+        style="@style/Theme.PlatziMusic.ButtonStyle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/defaultMargin"
         android:text="@string/button_login"
-        android:textColor="@android:color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
