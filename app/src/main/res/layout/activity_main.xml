@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -11,16 +11,18 @@
         android:id="@+id/ivLoginLogo"
         android:layout_width="140dp"
         android:layout_height="100dp"
-        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
         android:src="@drawable/logo" />
 
     <EditText
         android:id="@+id/etLoginUsername"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/defaultMargin"
-        android:layout_marginTop="120dp"
-        android:layout_marginEnd="@dimen/defaultMargin"
+        android:layout_below="@id/ivLoginLogo"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/defaultMargin"
         android:drawableStart="@drawable/ic_person"
         android:drawablePadding="@dimen/etPaddingIcon"
         android:drawableTint="@color/colorAccent"
@@ -30,9 +32,8 @@
         android:id="@+id/etLoginPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/defaultMargin"
-        android:layout_marginTop="180dp"
-        android:layout_marginEnd="@dimen/defaultMargin"
+        android:layout_below="@id/etLoginUsername"
+        android:layout_margin="@dimen/defaultMargin"
         android:drawableStart="@drawable/ic_lock"
         android:drawablePadding="@dimen/etPaddingIcon"
         android:drawableTint="@color/colorAccent"
@@ -41,9 +42,9 @@
     <com.google.android.material.button.MaterialButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
         android:layout_margin="@dimen/defaultMargin"
         android:text="@string/button_login"
         android:textColor="@android:color/black" />
 
-</FrameLayout>
+</RelativeLayout>
