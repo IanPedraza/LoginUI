@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/ivLoginLogo"
+        android:layout_width="140dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/etLoginUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/defaultMargin"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="@dimen/defaultMargin"
+        android:drawableStart="@drawable/ic_person"
+        android:drawablePadding="@dimen/etPaddingIcon"
+        android:drawableTint="@color/colorAccent"
+        android:hint="@string/hint_usuario" />
+
+    <EditText
+        android:id="@+id/etLoginPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/defaultMargin"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="@dimen/defaultMargin"
+        android:drawableStart="@drawable/ic_lock"
+        android:drawablePadding="@dimen/etPaddingIcon"
+        android:drawableTint="@color/colorAccent"
+        android:hint="@string/hint_password" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="@dimen/defaultMargin"
+        android:text="@string/button_login"
+        android:textColor="@android:color/black" />
+
+</FrameLayout>
